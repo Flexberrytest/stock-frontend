@@ -34,6 +34,28 @@ module.exports = {
         browser: false,
         node: true
       }
+    },
+    {
+      files: [
+        'app/mixins/regenerated/models/**/*.js',
+        'addon/mixins/regenerated/models/**/*.js',
+        'addon/addon/mixins/regenerated/models/**/*.js',
+        'tests/dummy/app/mixins/regenerated/models/**/*.js',
+      ],
+      rules: {
+        'no-unused-vars': 'off'
+      }
+    },
+    {
+      files: [
+        'app/locales/**/*.js',
+        'addon/locales/**/*.js',
+        'addon/addon/locales/**/*.js',
+        'tests/dummy/app/locales/**/*.js'
+      ],
+      rules: {
+        'ember/avoid-leaking-state-in-ember-objects': 'off'
+      }
     }
   ]
 };

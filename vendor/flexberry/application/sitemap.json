@@ -1,6 +1,22 @@
 ﻿{
-  "applicationCaption": null,
-  "applicationTitle": null,
-  "items": [],
+  "applicationCaption": "Stock",
+  "applicationTitle": "Stock",
+  "items": [
+    {
+      "link": null,
+      "menuName": "stock",
+      "caption": "Stock",
+      "title": "Stock",
+      "children": [
+        {
+          "link": "i-i-s-stock-склад-l",
+          "menuName": null,
+          "caption": "Склад",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
   "mobile": true
 }

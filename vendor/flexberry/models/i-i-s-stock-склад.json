@@ -33,7 +33,56 @@
       "inverse": "склад"
     }
   ],
-  "projections": [],
+  "projections": [
+    {
+      "name": "СкладE",
+      "modelName": "i-i-s-stock-склад",
+      "attrs": [
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "работников",
+          "caption": "Работников",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ТоварE",
+          "caption": "Товар",
+          "name": "товар",
+          "relatedTo": "i-i-s-stock-товар",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "СкладL",
+      "modelName": "i-i-s-stock-склад",
+      "attrs": [
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "работников",
+          "caption": "Работников",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
   "stored": true,
   "offline": true,
   "external": false
